@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/more_lay"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/more_tr01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center|left"
+                    android:text="我的收藏"
+                    android:textColor="#7B7B7B"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="4.0"
+                    android:src="@drawable/category_arrow" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/more_tr02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fl"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center|left"
+                    android:text="问题反馈"
+                    android:textColor="#7B7B7B"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="4.0"
+                    android:src="@drawable/category_arrow" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/more_tr03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center|left"
+                    android:text="帮助关于"
+                    android:textColor="#7B7B7B"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="4.0"
+                    android:src="@drawable/category_arrow" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

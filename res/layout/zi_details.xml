@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/zi_details_lay"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0EEEE"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="5dip" >
+
+            <ImageView
+                android:layout_width="65px"
+                android:layout_height="65px"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/cell_bg" />
+
+            <TextView
+                android:id="@+id/zi_details_tv01"
+                android:layout_width="65px"
+                android:layout_height="65px"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TableLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:padding="5dip" >
+
+            <TableRow
+                android:layout_width="65px"
+                android:layout_height="65px" >
+
+                <TextView
+                    android:id="@+id/zi_details_tv02"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/zi_details_tv03"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="65px"
+                android:layout_height="65px" >
+
+                <TextView
+                    android:id="@+id/zi_details_tv04"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/zi_details_tv05"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:autoText="true"
+                    android:gravity="left"
+                    android:textColor="#0D4FE4"
+                    android:textSize="15sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/zi_details_tv06"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

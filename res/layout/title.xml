@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65px"
+    android:background="@drawable/mmtitle_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/title_btn01"
+            android:layout_width="wrap_content"
+            android:layout_height="65px"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_back_sel"
+            android:textColor="@color/white"
+            android:visibility="gone" >
+        </Button>
+
+        <TextView
+            android:id="@+id/title_tv01"
+            android:layout_width="fill_parent"
+            android:layout_height="65px"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="5dip"
+            android:text="请稍候.."
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/title_iv02"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" >
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/details_lay"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/details_rl01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.zncm.easyzidian.view.KeywordsFlow
+                android:id="@+id/details_kf01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/search_ll01"
+                android:layout_below="@+id/one" >
+            </com.zncm.easyzidian.view.KeywordsFlow>
+
+            <Button
+                android:id="@+id/details_btn01"
+                android:layout_width="80dip" 
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_ok_sel"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:text="换一换"
+                android:textColor="@color/white"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/details_rl02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/details_pb01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/details_tv01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="美女"
+                android:textColor="@color/black"
+                android:textSize="24.0sp"
+                android:visibility="gone" />
+
+            <GridView
+                android:id="@+id/details_gv01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:cacheColorHint="#00000000"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:horizontalSpacing="5dip"
+                android:numColumns="5"
+                android:scrollbarSize="3.0dip"
+                android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+                android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dip" >
+            </GridView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

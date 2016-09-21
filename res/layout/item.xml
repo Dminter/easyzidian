@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_rl01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_grid_selector"
+    android:descendantFocusability="blocksDescendants" >
+
+    <com.zncm.easyzidian.view.AlwaysMarqueeTextView
+        android:id="@+id/item_tv01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="美女11"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/item_tv02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_tv01"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="美女"
+        android:textColor="@color/black"
+        android:textSize="24.0sp" />
+
+    <TextView
+        android:id="@+id/item_tv03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_tv02"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="美女"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" />
+
+</RelativeLayout>
